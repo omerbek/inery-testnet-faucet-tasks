@@ -13,7 +13,7 @@ const api = new Api({
     signatureProvider: signature
 })
 
-async function create(id, user, data){
+async function olustur(id, user, data){
     try{
         const tx = await api.transact({
             actions:[
@@ -45,7 +45,7 @@ async function create(id, user, data){
     }
 }
 
-async function read(id){
+async function oku(id){
     try{
         const tx = await api.transact({
             actions:[
@@ -76,7 +76,7 @@ async function read(id){
     }
 }
 
-async function update(id, data){
+async function guncelle(id, data){
     try{
         const tx = await api.transact({
             actions:[
@@ -108,7 +108,7 @@ async function update(id, data){
     }
 }
 
-async function destroy(id){
+async function yik(id){
     try{
         const tx = await api.transact({
             actions:[
