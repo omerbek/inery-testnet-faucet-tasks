@@ -13,13 +13,13 @@ const api = new Api({
     signatureProvider: signature
 })
 
-async function olustur(id, user, data){
+async function create(id, user, data){
     try{
         const tx = await api.transact({
             actions:[
                 {
                     account,
-                    name:"olustur",
+                    name:"create",
                     authorization:[
                         {
                             actor,
@@ -45,13 +45,13 @@ async function olustur(id, user, data){
     }
 }
 
-async function oku(id){
+async function read(id){
     try{
         const tx = await api.transact({
             actions:[
                 {
                     account,
-                    name:"oku",
+                    name:"read",
                     authorization:[
                         {
                             actor,
@@ -76,13 +76,13 @@ async function oku(id){
     }
 }
 
-async function guncelle(id, data){
+async function update(id, data){
     try{
         const tx = await api.transact({
             actions:[
                 {
                     account,
-                    name:"guncelle",
+                    name:"update",
                     authorization:[
                         {
                             actor,
@@ -108,13 +108,13 @@ async function guncelle(id, data){
     }
 }
 
-async function yik(id){
+async function destroy(id){
     try{
         const tx = await api.transact({
             actions:[
                 {
                     account,
-                    name:"yik",
+                    name:"destroy",
                     authorization:[
                         {
                             actor,
@@ -148,4 +148,4 @@ async function main(id, user, data){
     await yik(id)
 }
 
-main(1, account, "CRUD aracılıgıyla JSON RPC islemi")
+main(1, account, "CRUD aracılıgıyla JSON RPC islemi gitgub:omerbek")
