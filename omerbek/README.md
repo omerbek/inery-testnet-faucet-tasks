@@ -1,6 +1,6 @@
 ## Prerequisite
 
-### Instal curl
+### Install curl
 ```
 sudo apt-get install curl
 ```
