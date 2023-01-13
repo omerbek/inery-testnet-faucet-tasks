@@ -3,7 +3,7 @@ const url = "http://65.108.250.118:8888"
 
 const json_rpc = new JsonRpc(url) 
 const private_key = "Private_key"; 
-const actor = "alter.serv1"
+const actor = "bordomavi"
 
 const account = "bordomavi"
 const signature  = new JsSignatureProvider([private_key]); 
