@@ -142,10 +142,10 @@ async function destroy(id){
 
 
 async function main(id, user, data){
-    await create(id, user, data)
-    await read(id)
-    await update(id, data)
-    await destroy(id)
+    await olustur(id, user, data)
+    await oku(id)
+    await guncelle(id, data)
+    await yik(id)
 }
 
 main(1, account, "CRUD aracılıgıyla JSON RPC islemi")
